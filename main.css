@@ -1,0 +1,21 @@
+* {
+    user-select: none;
+    font-family: Arial;
+}
+
+.CustomButton {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: red;
+}
+
+.MainPanel {
+    order: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

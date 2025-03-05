@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TRUMP IDLE</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="MainPanel">
+            <h1>YOU HAVE <br/><span id="americansCount">0</span> 'MERICANS 🦅🦅🦅🦅</h1>
+            <h3 class="CustomButton", id="americanButton">MAKE BABY MERICAN</h3>
+            <h3 class="CustomButton", id="clearSaveButton">Clear Save</h3>
+        </div>
+        <script>
+            const Scripts = ["saves.js", "resources.js", "ui_management.js"].concat(["main.js"]);
+            var head = document.getElementsByTagName("head")[0];
+            Scripts.forEach((url) => {
+                var script = document.createElement("script");
+                script.src = "js/" + url;
+                console.log(script);
+                document.body.appendChild(script);
+            });
+        </script>
+    </body>
+</html>
