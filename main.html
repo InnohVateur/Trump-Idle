@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRUMP IDLE</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="MainPanel">
+                <h1>TRUMP IDLE 🦅</h1>
+                
+                <div class="resource-display">
+                    <div>🦅 <span id="americansCount">0</span> 'MERICANS</div>
+                    <div style="font-size: 0.8em; margin-top: 10px;">
+                        Per second: <span id="apsDisplay">0</span>
+                    </div>
+                </div>
+
+                <h3 class="CustomButton" id="americanButton">
+                    MAKE BABY 'MERICAN<br>
+                    <span style="font-size: 0.7em;">+<span id="apcDisplay">1</span> 'Mericans</span>
+                </h3>
+
+                <div class="woke-meter">
+                    <div class="woke-title">⚠️ WOKISME LEVEL ⚠️</div>
+                    <div class="woke-bar-container">
+                        <div class="woke-bar" id="wokeBar" style="width: 0%">
+                            <span id="wokePercent">0%</span>
+                        </div>
+                    </div>
+                    <h3 class="CustomButton" id="suppressButton">
+                        SUPPRESS WOKISME! 👊
+                    </h3>
+                </div>
+
+                <div class="stats-panel">
+                    <h3>📊 STATS</h3>
+                    <div>Families: <span id="familiesOwned">0</span></div>
+                    <div>States: <span id="statesOwned">0</span></div>
+                    <div>Countries: <span id="countriesOwned">0</span></div>
+                </div>
+
+                <div class="save-controls">
+                    <h3 class="CustomButton" id="clearSaveButton">🗑️ CLEAR SAVE</h3>
+                    <div style="font-size: 0.8em; margin-top: 5px;">
+                        Game auto-saves every minute
+                    </div>
+                </div>
+            </div>
+
+            <div class="ShopPanel">
+                <h2>🛒 SHOP</h2>
+                <div id="shopItems"></div>
+            </div>
+        </div>
+
+        <div class="game-over" id="gameOver">
+            <div class="game-over-content">
+                <div class="game-over-title">😱 GAME OVER 😱</div>
+                <div style="font-size: 1.5em; margin: 20px 0;">
+                    THE WOKISME HAS WON!<br>
+                    TRUMP HAS BEEN IMPEACHED!
+                </div>
+                <h3 class="CustomButton" id="restartButton">TRY AGAIN</h3>
+            </div>
+        </div>
+
+        <script src="js/saves.js"></script>
+        <script src="js/shop_data.js"></script>
+        <script src="js/resources.js"></script>
+        <script src="js/ui_management.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

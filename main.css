@@ -1,0 +1,241 @@
+* {
+    user-select: none;
+    font-family: 'Arial Black', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.CustomButton {
+    cursor: pointer;
+    background: linear-gradient(145deg, #ffd700, #ffed4e);
+    color: #000;
+    padding: 20px;
+    font-size: 1.3em;
+    border: 4px solid #ff0000;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.1s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+}
+
+.CustomButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.CustomButton:active {
+    transform: scale(0.98);
+}
+
+body {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+}
+
+.MainPanel {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid gold;
+    order: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.resource-display {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.woke-meter {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #ff0000;
+    margin: 20px 0;
+}
+
+.woke-title {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+    text-align: center;
+}
+
+.woke-bar-container {
+    background: #333;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+.woke-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #00ff00, #ffff00, #ff0000);
+    transition: width 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.stats-panel {
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.stats-panel h3 {
+    margin-bottom: 10px;
+}
+
+.save-controls {
+    background: rgba(255,215,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid gold;
+    text-align: center;
+}
+
+.ShopPanel {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid gold;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.shop-section-title {
+    font-size: 1.3em;
+    margin: 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+}
+
+.shop-section-title.producers {
+    color: #ffd700;
+    border-color: #ffd700;
+}
+
+.shop-section-title.upgrades {
+    color: #00ff00;
+    border-color: #00ff00;
+}
+
+.shop-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.shop-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.shop-item.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.shop-item.locked:hover {
+    transform: none;
+}
+
+.shop-item.purchased {
+    background: rgba(0, 255, 0, 0.2);
+    border: 2px solid #00ff00;
+}
+
+.shop-item-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.shop-item-description {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.shop-item-cost {
+    color: #ffd700;
+    font-size: 1.1em;
+}
+
+.shop-item-owned {
+    color: #00ff00;
+    font-size: 0.9em;
+}
+
+.game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.game-over-content {
+    background: #ff0000;
+    padding: 50px;
+    border-radius: 20px;
+    border: 5px solid #000;
+    text-align: center;
+}
+
+.game-over-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
