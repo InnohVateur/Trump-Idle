@@ -15,6 +15,7 @@
     padding: 5px;
     text-align: center;
     color:white;
+    margin-left: 10px;
 }
 
 body {
@@ -43,9 +44,13 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 50px;
+    gap: 5px;
 }
-.Column
+.Column {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
 
 .LeftColumn {
     background-color: lightblue;
@@ -59,7 +64,7 @@ body {
     align-items:center;
     flex-direction: column;
     background-color: lightblue;
-    margin-right: 10em;
+    padding-right: 10px;
 }
 
 ul.CountriesList {
