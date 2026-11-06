@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>TRUMP IDLE</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="MainPanel">
+        <h1>MAKE AMEWICA GWEAT AGAIN
+
+        </h1>
+        <div class="Row">
+            <div class="leftColumn" ;">
+                <ul class="countriesList"><h2>Countries you are currently ruling: <br></h2>
+                    <li class="CustomButton" , id="americaTab">America</li>
+                </ul>
+            </div>
+            <div class="centerColumn">
+                <h1>EMPOWEW THE COUNTWY</h1>
+
+                <h1>YOU HAVE <br /><span id="americansCount">0</span> 'MERICANS 🦅🦅🦅🦅</h1>
+                <h3 class="CustomButton" , id="americanButton">MAKE BABY MERICAN</h3>
+            </div>
+        </div>
+        <div class="Row">
+            <h2>
+                Utilities :
+            <h3 class="CustomButton" , id="clearSaveButton">Clear Save</h3>
+            <h3 class="CustomButton" , id="saveButton">Save progression</h3>
+            </h2>
+        </div>
+    </div>
+    <script>
+        const Scripts = ["saves.js", "resources.js", "ui_management.js"].concat(["game.js"]);
+        var head = document.getElementsByTagName("head")[0];
+        Scripts.forEach((url) => {
+            var script = document.createElement("script");
+            script.src = "js/" + url;
+            console.log(script);
+            document.body.appendChild(script);
+        });
+    </script>
+</body>
+
+</html>

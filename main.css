@@ -4,18 +4,63 @@
 }
 
 .CustomButton {
+    display:inline-block;
     cursor: pointer;
+    background-image: url("images/twump.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25px;
+    min-width: 100px;
+    padding: 5px;
+    text-align: center;
+    color:white;
 }
 
 body {
     display: flex;
-    justify-content: space-evenly;
-    background-color: red;
+    justify-content: flex-start;
+    background-image: url("images/amewicanFlag.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:500px;
+    margin:0;
 }
 
 .MainPanel {
-    order: 5;
     display: flex;
+    align-items:center;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 50px;
+}
+
+.leftColumn {
+    background-color: lightblue;
+    flex: 1;
+    gap: 10px;
+}
+
+.centerColumn {
+    flex: 4;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-color: lightblue;
+    margin-right: 10em;
+}
+
+ul.countriesList {
+    font-size: large;
 }

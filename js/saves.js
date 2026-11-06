@@ -5,11 +5,12 @@ var GameData = {
 };
 
 function save() {
-    localStorage.setItem("")
+    localStorage.setItem("gameData", JSON.stringify(GameData))
 }
 
 function wipe() {
-    localStorage.clear();
+    localStorage.removeItem("gameData");
+    location.reload();
 }
 
 function getNumericValue(field) {
