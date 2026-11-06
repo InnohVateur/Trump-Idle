@@ -3,7 +3,7 @@
     font-family: Arial;
 }
 
-.CustomButton {
+.TrumpButton {
     display:inline-block;
     cursor: pointer;
     background-image: url("images/twump.jpg");
@@ -45,14 +45,15 @@ body {
     width: 100%;
     gap: 50px;
 }
+.Column
 
-.leftColumn {
+.LeftColumn {
     background-color: lightblue;
     flex: 1;
     gap: 10px;
 }
 
-.centerColumn {
+.CenterColumn {
     flex: 4;
     display: flex;
     align-items:center;
@@ -61,6 +62,6 @@ body {
     margin-right: 10em;
 }
 
-ul.countriesList {
+ul.CountriesList {
     font-size: large;
 }
