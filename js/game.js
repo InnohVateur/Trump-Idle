@@ -6,15 +6,18 @@ if (savegame != null) {
 setInterval(save, 60000);
 
 var pewSecondLoop = window.setInterval(function () {
+    console.log(getNumericValue("couples"))
     pwocweateAmewicans(getNumericValue("couples"));
+    checkIfCouples();
 }, 1000);
 
 //Detects when "FORCED MARRIAGE" is pressed.
 document.getElementById("familyButton").addEventListener("click", () => {
-    if (getNumericValue("americans") >= 2) {
-        playewAction("americans", -2);
+    if (getNumericValue("americans") >= 2n) {
+        playewAction("americans", -2n);
+        updateLabel("americansCount",  GameData["americans"]);
         playewAction("couples", getNumericValue("couplesPerClick"));
-        updateLabel("couplesCount", GameData["couples"])
+        updateLabel("couplesCount", "AND " + GameData["couples"] + " HAPPILY MARRIED PATRIOTS")
     }
 });
 
